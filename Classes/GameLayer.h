@@ -200,5 +200,5 @@ private:
     
     void BirdAccelerate();
     //屏幕移动的速度
-    int pipSpeed =2;
+    int pipSpeed;
 };

@@ -38,6 +38,8 @@ bool GameLayer::init(){
             addChild(accelerateParticle);
         */
         accelerateParticle = NULL;
+
+		pipSpeed = 2;
         /*
         //闪亮
         Blink *blink = Blink::create(5.0f, 10);
