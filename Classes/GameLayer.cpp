@@ -213,6 +213,7 @@ void GameLayer::BirdAccelerate()
     if (accelerateParticle == NULL) {
         accelerateParticle = ParticleSystemQuad::create("particleImpact.plist");
         accelerateParticle->setScale(0.3f);
+		accelerateParticle->setTotalParticles(20);
         addChild(accelerateParticle);
     }
        accelerateParticle->setPosition(bird->getPositionX()-20, bird->getPositionY());
@@ -273,14 +274,15 @@ void GameLayer::checkHit() {
                         particleSystem->setTexture(TextureCache::sharedTextureCache()->addImage("star.png"));
                         addChild(particleSystem);
                          */
+						//读取粒子效果
+                        bird->changeEffectState(EFFECT_ACCELERATION);
                     }
                         break;
                     case 2:
                     {
                         //点赞效果
                         showComboEffect(0, this);
-                        //读取粒子效果
-                        bird->changeEffectState(EFFECT_ACCELERATION);
+						accelerateParticle->setTotalParticles(81);
                         }
                         break;
                      case 3:
