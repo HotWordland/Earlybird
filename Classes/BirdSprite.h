@@ -7,8 +7,15 @@ using namespace cocos2d;
 typedef enum{
     ACTION_STATE_IDLE,
 	ACTION_STATE_FLY,
-	ACTION_STATE_DIE
+	ACTION_STATE_DIE,
 } ActionState;
+
+typedef enum {
+    EFFECT_NORMAL,
+    //加速 acceleration
+    EFFECT_ACCELERATION
+}EffectState;
+
 const int BIRD_SPRITE_TAG = 10003;
 
 class BirdSprite : public Sprite {
@@ -55,6 +62,11 @@ public:
 	*/
 	void die();
 	
+    //物理影响
+    EffectState curEffectStatus;
+    
+    bool changeEffectState(EffectState state);
+
 protected:
 	/**
 	* This method can create a frame animation with the likey name texture.
@@ -67,12 +79,14 @@ protected:
 	 */
     void createBirdByRandom();
 
+
 private:
 	static BirdSprite* shareBirdSprite;
 	/**
 	* This method change current status. called by fly and idle etc.
 	*/
 	bool changeState(ActionState state);
+    
 
 	Action* idleAction;
 
@@ -81,6 +95,8 @@ private:
 	Action* swingAction;
 
 	ActionState currentStatus;
+    
+   
 
 	//the bird name will be created by random
 	string birdName;

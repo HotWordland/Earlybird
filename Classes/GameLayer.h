@@ -181,11 +181,13 @@ private:
     Sprite *landSpite1,*landSpite2;
 	//Ball
 	Sprite *ball;
-  //Ball was touch - ��ײ֮��Ͳ����ܵ�onTouch��Ӱ��
+  //Ball was touch - ≈ˆ◊≤÷Æ∫ÛæÕ≤ª‘⁄ ‹µΩonTouchµƒ”∞œÏ
 	bool BallisTouch;
 	//BallName
 	Sprite *ballName;
-
+//加速粒子
+    ParticleSystem* accelerateParticle;
+    
 	SEL_SCHEDULE  shiftLand;
     
 	void scrollLand(float dt);
@@ -195,4 +197,8 @@ private:
 	void gameOver();
 
 	void addBallObstacle(float dt);
+    
+    void BirdAccelerate();
+    //屏幕移动的速度
+    int pipSpeed =2;
 };

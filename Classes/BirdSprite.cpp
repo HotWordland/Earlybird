@@ -80,6 +80,13 @@ bool BirdSprite::changeState(ActionState state) {
     return true;
 }
 
+bool BirdSprite::changeEffectState(EffectState state) {
+    //this->stopAllActions();
+    curEffectStatus = state;
+    return true;
+}
+
+
 void BirdSprite::createBirdByRandom(){
 	if(this->isFirstTime & 1){
 		this->isFirstTime &= 2;

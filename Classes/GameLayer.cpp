@@ -29,6 +29,18 @@ bool GameLayer::init(){
 		this->bird->setPosition(origin.x + visiableSize.width*1/3 - 5,origin.y + visiableSize.height/2 + 5);
 		this->bird->idle();
 		this->addChild(this->bird);
+        
+        //初始化加速粒子
+            accelerateParticle = ParticleSystemQuad::create("particleImpact.plist");
+            accelerateParticle->setScale(0.5f);
+        accelerateParticle->setPosition(0,0);
+            addChild(accelerateParticle);
+        
+        /*
+        //闪亮
+        Blink *blink = Blink::create(5.0f, 10);
+        bird->runAction(blink);
+        */
 		//Ball
 		this->ball = Sprite::create("ball.png");
         PhysicsBody *ballbody = PhysicsBody::create();
@@ -123,12 +135,13 @@ bool GameLayer::onContactBegin(PhysicsContact& contact) {
 	else
 	{
 			this->gameOver();
+            this->removeChild(accelerateParticle);
+            accelerateParticle = NULL;
+            bird->changeEffectState(EFFECT_NORMAL);
 			unschedule(schedule_selector(GameLayer::addBallObstacle));
-
 	}
 	return true;
 }
-
 void GameLayer::scrollLand(float dt){
 	this->landSpite1->setPositionX(this->landSpite1->getPositionX() - 2.0f);
 	this->landSpite2->setPositionX(this->landSpite1->getPositionX() + this->landSpite1->getContentSize().width - 2.0f);
@@ -137,10 +150,9 @@ void GameLayer::scrollLand(float dt){
 		this->landSpite1->setPositionX(0);
 //        this->landSpite2->setPositionX(landSpite1->getContentSize().width-2.0f);
 	}
-    
     // move the pips
     for (auto singlePip : this->pips) {
-        singlePip->setPositionX(singlePip->getPositionX() - 2);
+        singlePip->setPositionX(singlePip->getPositionX() - pipSpeed);
         if(singlePip->getPositionX() < -PIP_WIDTH) {
             singlePip->setTag(PIP_NEW);
             Size visibleSize = Director::getInstance()->getVisibleSize();
@@ -164,7 +176,8 @@ void GameLayer::onTouch() {
 		this->gameStatus = GAME_STATUS_START;
         this->createPips();
 	}else if(this->gameStatus == GAME_STATUS_START) {
-		this->bird->getPhysicsBody()->setVelocity(Vect(0, 260));
+        this->bird->getPhysicsBody()->setVelocity(Vect(0, 260));
+
         /*
 		if (!BallisTouch)
 		{
@@ -178,17 +191,34 @@ void GameLayer::rotateBird() {
     float verticalSpeed = this->bird->getPhysicsBody()->getVelocity().y;
     this->bird->setRotation(- min(max(-90, (verticalSpeed*0.2 + 60)), 30));
 }
-
-
 void GameLayer::update(float delta) {
     if (this->gameStatus == GAME_STATUS_START) {
         this->rotateBird();
 	//	ball->setPosition(bird->getPositionX(),bird->getPositionY()+30);
 //		ballName->setPosition(ball->getPositionX(),ball->getPositionY()+40);
 		this->checkHit();
+        if (bird->curEffectStatus == EFFECT_ACCELERATION) {
+            BirdAccelerate();
+        }
     }
 }
+//加速
+void GameLayer::BirdAccelerate()
+{
+    /*
+    if (accelerateParticle == 0) {
+        accelerateParticle = ParticleSystemQuad::create("particleImpact.plist");
+        accelerateParticle->setScale(0.5f);
+        addChild(accelerateParticle);
+    }
+     */
+       accelerateParticle->setPosition(bird->getPositionX()-20, bird->getPositionY());
+    if (bird->getPhysicsBody()->getVelocity().x==0) {
+//        bird->getPhysicsBody()->setVelocity(Vec2(150, 0));
+        pipSpeed = 5;
+    }
 
+}
 void GameLayer::createPips() {
     // Create the pips
     for (int i = 0; i < PIP_COUNT; i++) {
@@ -234,18 +264,21 @@ void GameLayer::checkHit() {
                 switch (score) {
                         case 1:
                     {
+                        /*
                         //粒子效果
                         ParticleSystem* particleSystem = ParticleRain::create();
-//                        particleSystem->setPositionY(0);
                         particleSystem->setTexture(TextureCache::sharedTextureCache()->addImage("star.png"));
                         addChild(particleSystem);
+                         */
                     }
                         break;
                     case 2:
                     {
                         //点赞效果
                         showComboEffect(0, this);
-                    }
+                        //读取粒子效果
+                        bird->changeEffectState(EFFECT_ACCELERATION);
+                        }
                         break;
                      case 3:
                     {
@@ -256,7 +289,6 @@ void GameLayer::checkHit() {
                     default:
                         break;
                 }
-				
             }
         }
     }
@@ -321,10 +353,11 @@ void GameLayer::birdSpriteFadeOut(){
 	CallFunc* animationDone = CallFunc::create(bind(&GameLayer::birdSpriteRemove,this));
 	Sequence* sequence = Sequence::createWithTwoActions(animation,animationDone);
 	this->bird->stopAllActions();
-	this->bird->runAction(sequence);
+    this->bird->runAction(sequence);
+//    this->accelerateParticle->runAction(sequence);
 }
 
 void GameLayer::birdSpriteRemove(){
 	this->bird->setRotation(0);
 	this->removeChild(this->bird);
-}
+   }

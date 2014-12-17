@@ -150,6 +150,8 @@
 		FE81A04C1A31E5F00053A5EB /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = FE81A04A1A31E5F00053A5EB /* ball.png */; };
 		FE81A0521A31EC860053A5EB /* BallWithHoney.png in Resources */ = {isa = PBXBuildFile; fileRef = FE81A0511A31EC860053A5EB /* BallWithHoney.png */; };
 		FE81A0531A31EC860053A5EB /* BallWithHoney.png in Resources */ = {isa = PBXBuildFile; fileRef = FE81A0511A31EC860053A5EB /* BallWithHoney.png */; };
+		FED25E961A413C1D009702B0 /* particleImpact.plist in Resources */ = {isa = PBXBuildFile; fileRef = FED25E951A413C1D009702B0 /* particleImpact.plist */; };
+		FED25E971A413C1D009702B0 /* particleImpact.plist in Resources */ = {isa = PBXBuildFile; fileRef = FED25E951A413C1D009702B0 /* particleImpact.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -405,6 +407,7 @@
 		FE81A0471A31E5CC0053A5EB /* GameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLayer.h; sourceTree = "<group>"; };
 		FE81A04A1A31E5F00053A5EB /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
 		FE81A0511A31EC860053A5EB /* BallWithHoney.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BallWithHoney.png; sourceTree = "<group>"; };
+		FED25E951A413C1D009702B0 /* particleImpact.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = particleImpact.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -545,6 +548,7 @@
 			isa = PBXGroup;
 			children = (
 				1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */,
+				FED25E8F1A41372F009702B0 /* ParticleResource */,
 				15AA9C4015B7EC450033D6C2 /* Classes */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				080E96DDFE201D6D7F000001 /* ios */,
@@ -672,6 +676,15 @@
 			);
 			name = Resources;
 			path = ../Resources;
+			sourceTree = "<group>";
+		};
+		FED25E8F1A41372F009702B0 /* ParticleResource */ = {
+			isa = PBXGroup;
+			children = (
+				FED25E951A413C1D009702B0 /* particleImpact.plist */,
+			);
+			name = ParticleResource;
+			path = ../classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -856,6 +869,7 @@
 				516B5739196288B400B223BB /* 1257355888.png in Resources */,
 				FE6BE07A1A32162300D2DAFF /* head01.png in Resources */,
 				516B574B196288B400B223BB /* sfx_hit.ogg in Resources */,
+				FED25E961A413C1D009702B0 /* particleImpact.plist in Resources */,
 				51E5D21619628F30004E9B38 /* Images.xcassets in Resources */,
 				50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */,
 				5087E78017EB970100C73F5D /* Icon-114.png in Resources */,
@@ -908,6 +922,7 @@
 				FE0A511E1A20ABA300B16DC6 /* starYou.png in Resources */,
 				FE6BE0741A31F58600D2DAFF /* combo_1.png in Resources */,
 				503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */,
+				FED25E971A413C1D009702B0 /* particleImpact.plist in Resources */,
 				5087E75417EB910900C73F5D /* CloseSelected.png in Resources */,
 				5087E75517EB910900C73F5D /* HelloWorld.png in Resources */,
 				FE81A04C1A31E5F00053A5EB /* ball.png in Resources */,
