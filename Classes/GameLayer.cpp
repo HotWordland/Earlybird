@@ -30,12 +30,14 @@ bool GameLayer::init(){
 		this->bird->idle();
 		this->addChild(this->bird);
         
+        /*
         //初始化加速粒子
             accelerateParticle = ParticleSystemQuad::create("particleImpact.plist");
             accelerateParticle->setScale(0.5f);
-        accelerateParticle->setPosition(0,0);
+           accelerateParticle->setPosition(0,0);
             addChild(accelerateParticle);
-        
+        */
+        accelerateParticle = NULL;
         /*
         //闪亮
         Blink *blink = Blink::create(5.0f, 10);
@@ -205,13 +207,12 @@ void GameLayer::update(float delta) {
 //加速
 void GameLayer::BirdAccelerate()
 {
-    /*
-    if (accelerateParticle == 0) {
+    
+    if (accelerateParticle == NULL) {
         accelerateParticle = ParticleSystemQuad::create("particleImpact.plist");
-        accelerateParticle->setScale(0.5f);
+        accelerateParticle->setScale(0.3f);
         addChild(accelerateParticle);
     }
-     */
        accelerateParticle->setPosition(bird->getPositionX()-20, bird->getPositionY());
     if (bird->getPhysicsBody()->getVelocity().x==0) {
 //        bird->getPhysicsBody()->setVelocity(Vec2(150, 0));
