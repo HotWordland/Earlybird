@@ -29,7 +29,13 @@ bool GameScene::init(){
 		if(statusLayer) {
 			this->addChild(statusLayer);
 		}
-
+        auto indicatorLayer = IndicatorLayer::create();
+        if (gameLayer) {
+            gameLayer->setIndicatorDelegator(indicatorLayer);
+        }
+        if (indicatorLayer) {
+            addChild(indicatorLayer);
+        }
 		// Add operation layer to control the game
 		auto optionLayer = OptionLayer::create();
 		if(optionLayer) {

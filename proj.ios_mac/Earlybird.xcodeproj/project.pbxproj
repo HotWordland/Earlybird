@@ -134,6 +134,8 @@
 		FE0A51221A20ABA300B16DC6 /* starLu.png in Resources */ = {isa = PBXBuildFile; fileRef = FE0A511C1A20ABA300B16DC6 /* starLu.png */; };
 		FE0A51241A20AF8A00B16DC6 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = FE0A51231A20AF8A00B16DC6 /* star.png */; };
 		FE0A51251A20AF8A00B16DC6 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = FE0A51231A20AF8A00B16DC6 /* star.png */; };
+		FE695EBA1A4F12A8004BFEEB /* IndicatorLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE695EB81A4F12A8004BFEEB /* IndicatorLayer.cpp */; };
+		FE695EBB1A4F12A8004BFEEB /* IndicatorLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE695EB81A4F12A8004BFEEB /* IndicatorLayer.cpp */; };
 		FE6BE06C1A31F52200D2DAFF /* ComboEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE6BE06A1A31F52200D2DAFF /* ComboEffect.cpp */; };
 		FE6BE06D1A31F52200D2DAFF /* ComboEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE6BE06A1A31F52200D2DAFF /* ComboEffect.cpp */; };
 		FE6BE0731A31F58600D2DAFF /* combo_1.png in Resources */ = {isa = PBXBuildFile; fileRef = FE6BE0701A31F58600D2DAFF /* combo_1.png */; };
@@ -397,6 +399,8 @@
 		FE0A511B1A20ABA300B16DC6 /* starLove.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starLove.png; sourceTree = "<group>"; };
 		FE0A511C1A20ABA300B16DC6 /* starLu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starLu.png; sourceTree = "<group>"; };
 		FE0A51231A20AF8A00B16DC6 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		FE695EB81A4F12A8004BFEEB /* IndicatorLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IndicatorLayer.cpp; path = ../Classes/IndicatorLayer.cpp; sourceTree = "<group>"; };
+		FE695EB91A4F12A8004BFEEB /* IndicatorLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IndicatorLayer.h; path = ../Classes/IndicatorLayer.h; sourceTree = "<group>"; };
 		FE6BE06A1A31F52200D2DAFF /* ComboEffect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ComboEffect.cpp; sourceTree = "<group>"; };
 		FE6BE06B1A31F52200D2DAFF /* ComboEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComboEffect.h; sourceTree = "<group>"; };
 		FE6BE0701A31F58600D2DAFF /* combo_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = combo_1.png; sourceTree = "<group>"; };
@@ -513,6 +517,8 @@
 				1AFAF8B416D35DE700DB1158 /* AppDelegate.h */,
 				1AFAF8B516D35DE700DB1158 /* HelloWorldScene.cpp */,
 				1AFAF8B616D35DE700DB1158 /* HelloWorldScene.h */,
+				FE695EB81A4F12A8004BFEEB /* IndicatorLayer.cpp */,
+				FE695EB91A4F12A8004BFEEB /* IndicatorLayer.h */,
 			);
 			name = Classes;
 			path = ../classes;
@@ -959,6 +965,7 @@
 				516B5783196288CF00B223BB /* WelcomeLayer.cpp in Sources */,
 				516B5781196288CF00B223BB /* UserRecord.cpp in Sources */,
 				516B577B196288CF00B223BB /* Number.cpp in Sources */,
+				FE695EBA1A4F12A8004BFEEB /* IndicatorLayer.cpp in Sources */,
 				FE0A51111A20A71600B16DC6 /* StarParticle.cpp in Sources */,
 				516B5771196288CF00B223BB /* BirdSprite.cpp in Sources */,
 				FE6BE06C1A31F52200D2DAFF /* ComboEffect.cpp in Sources */,
@@ -971,6 +978,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				516B576E196288CF00B223BB /* AtlasLoader.cpp in Sources */,
+				FE695EBB1A4F12A8004BFEEB /* IndicatorLayer.cpp in Sources */,
 				516B577C196288CF00B223BB /* Number.cpp in Sources */,
 				516B5772196288CF00B223BB /* BirdSprite.cpp in Sources */,
 				5087E75717EB910900C73F5D /* AppDelegate.cpp in Sources */,

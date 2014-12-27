@@ -275,14 +275,15 @@ void GameLayer::checkHit() {
                         addChild(particleSystem);
                          */
 						//读取粒子效果
-                        bird->changeEffectState(EFFECT_ACCELERATION);
+//                        bird->changeEffectState(EFFECT_ACCELERATION);
+                        this->indicatordelegator->displayGoodWindow();
                     }
                         break;
                     case 2:
                     {
                         //点赞效果
                         showComboEffect(0, this);
-						accelerateParticle->setTotalParticles(81);
+//						accelerateParticle->setTotalParticles(81);
                         }
                         break;
                      case 3:

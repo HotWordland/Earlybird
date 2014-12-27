@@ -4,7 +4,7 @@
 #include "GameLayer.h"
 #include "StatusLayer.h"
 #include "OptionLayer.h"
-
+#include "IndicatorLayer.h"
 using namespace cocos2d;
 
 class GameScene:public Scene{

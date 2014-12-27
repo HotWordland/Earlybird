@@ -8,7 +8,6 @@
 #include "AtlasLoader.h"
 #include "SimpleAudioEngine.h"
 #include <cstdlib>
-
 using namespace cocos2d;
 using namespace std;
 using namespace CocosDenshion;
@@ -102,6 +101,11 @@ public:
 	virtual void onGameEnd(int curSocre, int bestScore) = 0;
 };
 
+class IndicatorDelegate {
+public:
+    virtual void displayGoodWindow() = 0;
+};
+
 class GameLayer : public Layer , public OptionDelegate{
 public:
 	GameLayer();
@@ -116,6 +120,8 @@ public:
 	* According to current game status, give the order to delegate.
 	*/
 	CC_SYNTHESIZE(StatusDelegate*, delegator, Delegator);
+    //自定义层
+    CC_SYNTHESIZE(IndicatorDelegate*, indicatordelegator, IndicatorDelegator);
 
 	/**
 	* @Override 
