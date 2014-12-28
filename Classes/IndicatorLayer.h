@@ -21,10 +21,12 @@ public:
     virtual bool init();
     CREATE_FUNC(IndicatorLayer);
     void displayGoodWindow();
+	//延迟执行的函数必须要加float dt 参数
+	void hideGoodWindow(float dt);
 private:
     Size visibleSize ;
     Vec2 originPoint;
-     Sprite* ball;
+     Sprite* displaySprite;
 };
 
 #endif /* defined(__Earlybird__IndicatorLayer__) */
