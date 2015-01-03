@@ -134,8 +134,6 @@
 		FE0A51221A20ABA300B16DC6 /* starLu.png in Resources */ = {isa = PBXBuildFile; fileRef = FE0A511C1A20ABA300B16DC6 /* starLu.png */; };
 		FE0A51241A20AF8A00B16DC6 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = FE0A51231A20AF8A00B16DC6 /* star.png */; };
 		FE0A51251A20AF8A00B16DC6 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = FE0A51231A20AF8A00B16DC6 /* star.png */; };
-		FE695EBA1A4F12A8004BFEEB /* IndicatorLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE695EB81A4F12A8004BFEEB /* IndicatorLayer.cpp */; };
-		FE695EBB1A4F12A8004BFEEB /* IndicatorLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE695EB81A4F12A8004BFEEB /* IndicatorLayer.cpp */; };
 		FE6BE06C1A31F52200D2DAFF /* ComboEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE6BE06A1A31F52200D2DAFF /* ComboEffect.cpp */; };
 		FE6BE06D1A31F52200D2DAFF /* ComboEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE6BE06A1A31F52200D2DAFF /* ComboEffect.cpp */; };
 		FE6BE0731A31F58600D2DAFF /* combo_1.png in Resources */ = {isa = PBXBuildFile; fileRef = FE6BE0701A31F58600D2DAFF /* combo_1.png */; };
@@ -146,14 +144,16 @@
 		FE6BE0781A31F58600D2DAFF /* combo_3.png in Resources */ = {isa = PBXBuildFile; fileRef = FE6BE0721A31F58600D2DAFF /* combo_3.png */; };
 		FE6BE07A1A32162300D2DAFF /* head01.png in Resources */ = {isa = PBXBuildFile; fileRef = FE6BE0791A32162300D2DAFF /* head01.png */; };
 		FE6BE07B1A32162300D2DAFF /* head01.png in Resources */ = {isa = PBXBuildFile; fileRef = FE6BE0791A32162300D2DAFF /* head01.png */; };
-		FE81A0481A31E5CC0053A5EB /* GameLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE81A0461A31E5CC0053A5EB /* GameLayer.cpp */; };
-		FE81A0491A31E5CC0053A5EB /* GameLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE81A0461A31E5CC0053A5EB /* GameLayer.cpp */; };
 		FE81A04B1A31E5F00053A5EB /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = FE81A04A1A31E5F00053A5EB /* ball.png */; };
 		FE81A04C1A31E5F00053A5EB /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = FE81A04A1A31E5F00053A5EB /* ball.png */; };
 		FE81A0521A31EC860053A5EB /* BallWithHoney.png in Resources */ = {isa = PBXBuildFile; fileRef = FE81A0511A31EC860053A5EB /* BallWithHoney.png */; };
 		FE81A0531A31EC860053A5EB /* BallWithHoney.png in Resources */ = {isa = PBXBuildFile; fileRef = FE81A0511A31EC860053A5EB /* BallWithHoney.png */; };
 		FED25E961A413C1D009702B0 /* particleImpact.plist in Resources */ = {isa = PBXBuildFile; fileRef = FED25E951A413C1D009702B0 /* particleImpact.plist */; };
 		FED25E971A413C1D009702B0 /* particleImpact.plist in Resources */ = {isa = PBXBuildFile; fileRef = FED25E951A413C1D009702B0 /* particleImpact.plist */; };
+		FEE7DA671A50685F0004AA9D /* IndicatorLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEE7DA651A50685F0004AA9D /* IndicatorLayer.cpp */; };
+		FEE7DA681A50685F0004AA9D /* IndicatorLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEE7DA651A50685F0004AA9D /* IndicatorLayer.cpp */; };
+		FEE7DA6B1A50689E0004AA9D /* GameLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEE7DA691A50689E0004AA9D /* GameLayer.cpp */; };
+		FEE7DA6C1A50689E0004AA9D /* GameLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEE7DA691A50689E0004AA9D /* GameLayer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -399,19 +399,19 @@
 		FE0A511B1A20ABA300B16DC6 /* starLove.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starLove.png; sourceTree = "<group>"; };
 		FE0A511C1A20ABA300B16DC6 /* starLu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starLu.png; sourceTree = "<group>"; };
 		FE0A51231A20AF8A00B16DC6 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
-		FE695EB81A4F12A8004BFEEB /* IndicatorLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IndicatorLayer.cpp; path = ../Classes/IndicatorLayer.cpp; sourceTree = "<group>"; };
-		FE695EB91A4F12A8004BFEEB /* IndicatorLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IndicatorLayer.h; path = ../Classes/IndicatorLayer.h; sourceTree = "<group>"; };
 		FE6BE06A1A31F52200D2DAFF /* ComboEffect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ComboEffect.cpp; sourceTree = "<group>"; };
 		FE6BE06B1A31F52200D2DAFF /* ComboEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComboEffect.h; sourceTree = "<group>"; };
 		FE6BE0701A31F58600D2DAFF /* combo_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = combo_1.png; sourceTree = "<group>"; };
 		FE6BE0711A31F58600D2DAFF /* combo_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = combo_2.png; sourceTree = "<group>"; };
 		FE6BE0721A31F58600D2DAFF /* combo_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = combo_3.png; sourceTree = "<group>"; };
 		FE6BE0791A32162300D2DAFF /* head01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = head01.png; sourceTree = "<group>"; };
-		FE81A0461A31E5CC0053A5EB /* GameLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameLayer.cpp; sourceTree = "<group>"; };
-		FE81A0471A31E5CC0053A5EB /* GameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLayer.h; sourceTree = "<group>"; };
 		FE81A04A1A31E5F00053A5EB /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
 		FE81A0511A31EC860053A5EB /* BallWithHoney.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BallWithHoney.png; sourceTree = "<group>"; };
 		FED25E951A413C1D009702B0 /* particleImpact.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = particleImpact.plist; sourceTree = "<group>"; };
+		FEE7DA651A50685F0004AA9D /* IndicatorLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IndicatorLayer.cpp; path = ../Classes/IndicatorLayer.cpp; sourceTree = "<group>"; };
+		FEE7DA661A50685F0004AA9D /* IndicatorLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IndicatorLayer.h; path = ../Classes/IndicatorLayer.h; sourceTree = "<group>"; };
+		FEE7DA691A50689E0004AA9D /* GameLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameLayer.cpp; path = ../Classes/GameLayer.cpp; sourceTree = "<group>"; };
+		FEE7DA6A1A50689E0004AA9D /* GameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameLayer.h; path = ../Classes/GameLayer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -483,8 +483,6 @@
 			children = (
 				FE6BE06A1A31F52200D2DAFF /* ComboEffect.cpp */,
 				FE6BE06B1A31F52200D2DAFF /* ComboEffect.h */,
-				FE81A0461A31E5CC0053A5EB /* GameLayer.cpp */,
-				FE81A0471A31E5CC0053A5EB /* GameLayer.h */,
 				FE0A51131A20A84D00B16DC6 /* Star.cpp */,
 				FE0A51141A20A84D00B16DC6 /* Star.h */,
 				516B5753196288CF00B223BB /* AtlasLoader.cpp */,
@@ -517,8 +515,10 @@
 				1AFAF8B416D35DE700DB1158 /* AppDelegate.h */,
 				1AFAF8B516D35DE700DB1158 /* HelloWorldScene.cpp */,
 				1AFAF8B616D35DE700DB1158 /* HelloWorldScene.h */,
-				FE695EB81A4F12A8004BFEEB /* IndicatorLayer.cpp */,
-				FE695EB91A4F12A8004BFEEB /* IndicatorLayer.h */,
+				FEE7DA651A50685F0004AA9D /* IndicatorLayer.cpp */,
+				FEE7DA661A50685F0004AA9D /* IndicatorLayer.h */,
+				FEE7DA691A50689E0004AA9D /* GameLayer.cpp */,
+				FEE7DA6A1A50689E0004AA9D /* GameLayer.h */,
 			);
 			name = Classes;
 			path = ../classes;
@@ -949,11 +949,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				516B577F196288CF00B223BB /* StatusLayer.cpp in Sources */,
+				FEE7DA671A50685F0004AA9D /* IndicatorLayer.cpp in Sources */,
 				516B5775196288CF00B223BB /* GameScene.cpp in Sources */,
 				516B5779196288CF00B223BB /* MenuScene.cpp in Sources */,
 				516B5785196288CF00B223BB /* WelcomeScene.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
-				FE81A0481A31E5CC0053A5EB /* GameLayer.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				1AFAF8B716D35DE700DB1158 /* AppDelegate.cpp in Sources */,
 				516B576F196288CF00B223BB /* BackgroundLayer.cpp in Sources */,
@@ -965,7 +965,7 @@
 				516B5783196288CF00B223BB /* WelcomeLayer.cpp in Sources */,
 				516B5781196288CF00B223BB /* UserRecord.cpp in Sources */,
 				516B577B196288CF00B223BB /* Number.cpp in Sources */,
-				FE695EBA1A4F12A8004BFEEB /* IndicatorLayer.cpp in Sources */,
+				FEE7DA6B1A50689E0004AA9D /* GameLayer.cpp in Sources */,
 				FE0A51111A20A71600B16DC6 /* StarParticle.cpp in Sources */,
 				516B5771196288CF00B223BB /* BirdSprite.cpp in Sources */,
 				FE6BE06C1A31F52200D2DAFF /* ComboEffect.cpp in Sources */,
@@ -978,12 +978,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				516B576E196288CF00B223BB /* AtlasLoader.cpp in Sources */,
-				FE695EBB1A4F12A8004BFEEB /* IndicatorLayer.cpp in Sources */,
 				516B577C196288CF00B223BB /* Number.cpp in Sources */,
 				516B5772196288CF00B223BB /* BirdSprite.cpp in Sources */,
 				5087E75717EB910900C73F5D /* AppDelegate.cpp in Sources */,
 				516B5770196288CF00B223BB /* BackgroundLayer.cpp in Sources */,
-				FE81A0491A31E5CC0053A5EB /* GameLayer.cpp in Sources */,
+				FEE7DA6C1A50689E0004AA9D /* GameLayer.cpp in Sources */,
 				5087E75817EB910900C73F5D /* HelloWorldScene.cpp in Sources */,
 				516B577E196288CF00B223BB /* OptionLayer.cpp in Sources */,
 				FE0A51121A20A71600B16DC6 /* StarParticle.cpp in Sources */,
@@ -992,6 +991,7 @@
 				FE0A51161A20A84D00B16DC6 /* Star.cpp in Sources */,
 				516B5778196288CF00B223BB /* LoadingScene.cpp in Sources */,
 				516B577A196288CF00B223BB /* MenuScene.cpp in Sources */,
+				FEE7DA681A50685F0004AA9D /* IndicatorLayer.cpp in Sources */,
 				516B5786196288CF00B223BB /* WelcomeScene.cpp in Sources */,
 				516B5780196288CF00B223BB /* StatusLayer.cpp in Sources */,
 				516B5776196288CF00B223BB /* GameScene.cpp in Sources */,
@@ -1062,7 +1062,8 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: dong jian (LN27ZY9Q8Y)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: dong jian (LN27ZY9Q8Y)";
 				COMPRESS_PNG_FILES = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
@@ -1083,6 +1084,7 @@
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
@@ -1095,7 +1097,8 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1114,6 +1117,7 @@
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
